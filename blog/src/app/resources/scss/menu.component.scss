@@ -1,0 +1,45 @@
+
+@import 'palette';
+@import 'fonts';
+@import 'animation';
+
+
+.menu-container
+{
+	width:100%;
+	position : fixed;
+	min-height : 2em;
+	font-size : 1.5em;
+	
+	
+	background : transparent;
+	border-bottom : 0.1em solid $c_vlight;
+	
+	
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	.menu-item
+	{
+		
+	height : 100%;
+	background : green;
+	margin-left: 0.2em;
+	margin-right : 0.2em;
+	padding : 0.4em;
+	background : transparent;
+	color : $c_vlight;
+	font-family : firstFont;	
+	}
+	.menu-item:hover
+	{
+		color : $c_dark;
+		background : $c_vlight;
+		animation : fadeBackground 1s linear 1;
+		
+	}
+
+
+}

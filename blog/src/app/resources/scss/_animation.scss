@@ -1,0 +1,6 @@
+@keyframes fadeBackground
+{
+	from{background : transparent; color : $c_vlight; }
+	to{background : $c_vlight; color : $c_dark;}
+	
+	}
