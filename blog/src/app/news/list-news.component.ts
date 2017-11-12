@@ -20,18 +20,20 @@ export class AppListNewsComponent {
 
   constructor(private service: NewsService) {
 
-    this.service.getConfiguration().subscribe(
-      (resultat) => {
-        console.log('Résultat des news : ' + resultat);
+    this.service.getConfiguration()
+      .subscribe(
+      list => {
+        this.list = list;
+        console.log('Recupération des news dans le compnent nb elements : ' + list.length);
+
+  
+
       },
       (error) => console.log('Impossible de récupérer les news : ' + error),
-      () =>  console.log('Impossible de récupérer les news')
-    );
+      () => console.log('Impossible de récupérer les news')
+      );
 
 
   }
-
-
-
 
 }

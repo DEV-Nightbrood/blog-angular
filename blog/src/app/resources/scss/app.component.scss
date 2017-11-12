@@ -1,7 +1,14 @@
 @import 'palette';
 
 
-body, html 
+body, html
 {
-background  : $c_vdark;
+background  : $c_dark;
 }
+
+
+* {
+	color : $c_vlight;
+	font-family : textFont;
+}
+

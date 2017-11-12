@@ -4,5 +4,6 @@ body, html {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	background: #111;
+	background:rgba(5, 5, 5, 1);
+	
 }

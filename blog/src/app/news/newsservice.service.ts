@@ -1,3 +1,4 @@
+import { News } from './news';
 import {Injectable} from '@angular/core';
 import {Http} from '@angular/http';
 import {Observable} from 'rxjs/Observable';
@@ -14,8 +15,8 @@ export class NewsService {
 
   }
 
-  getConfiguration = (): Observable<Response> => {
+  getConfiguration = (): Observable<News[]> => {
     console.log('In getConfiguration of ConfigurationService');
-    return this.http.get('app/news/config.json').map(res => res.json());
+    return this.http.get('http://localhost:3000/news').map(res => res.json());
   }
 }
